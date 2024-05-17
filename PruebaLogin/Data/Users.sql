@@ -1,0 +1,12 @@
+USE b24ajmwworgqjtpu0o1r;
+SELECT * FROM Users;
+
+CREATE TABLE Users (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Password VARCHAR(150) NOT NULL
+);
+--DROP TABLE Users;
+INSERT INTO Users VALUES (1,"mateo@gmail.com","12345");
+
+SELECT * FROM Users;
